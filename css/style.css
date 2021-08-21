@@ -1,0 +1,167 @@
+body{
+    background-color:#f1ebdf;
+    font-family: cursive;
+
+}
+.rock-paper-scissor-main{
+    width: 1200px; 
+     margin: auto;
+}
+
+.rock-paper-scissor-outer{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: auto;
+}
+.rock-paper-scissor{
+    display:flex;
+}
+
+.rock-paper-scissor-player-inner{
+    display:flex;
+    padding: 10px 50px;
+    
+    
+}
+.rock-paper-scissor-player h2, .rock-paper-scissor-bot h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.rock-paper-scissor-bot-inner{
+    display:flex;
+    padding: 10px 50px;
+}
+
+.rock-paper-scissor-img{
+    width:100px;
+    height:100px;
+    border:2px solid #f1ebdf;
+    border-radius: 28px;
+
+}
+.rock-paper-scissor-img:hover{
+    cursor:pointer;
+}
+.rock-paper-scissor-bot-img{
+    width:100px;
+    height:100px;
+    border:2px solid #f1ebdf;
+    border-radius: 28px;
+}
+
+.rock-paper-scissor-player div, .rock-paper-scissor-bot div{
+    margin:20px;
+}
+ 
+.rock-paper-scissor-img:active{
+
+        cursor:pointer;
+        box-shadow: 0px 0px 0px 1px rgba(226 ,210, 176, 0);
+        animation: anim-shadow 0.2s forwards;
+} 
+
+@keyframes anim-shadow {
+    100%{
+        box-shadow: 0px 0px 50px 20px rgba(212 ,191, 147, 1);  
+    }
+}
+.window-section{
+    display: flex;
+    justify-content: center;
+}
+
+.player-window {
+    width:150px;
+    height:150px;
+    background-color: #fff;
+    border:2px solid;
+    border-radius: 45px;
+    margin-right: 135px;
+    margin-left: 235px;
+}
+.bot-window{
+    width:150px;
+    height:150px;
+    background-color: #fff;
+    border:2px solid;
+    border-radius: 45px;
+    margin-left: 135px;
+    margin-right: 235px;
+}
+.window-mid-section{
+    margin: auto;
+    font-size: 50px;;
+}
+
+.score{
+    text-align: center;
+}
+
+.score p{
+    margin: 0;
+    font-size: 42px;
+}
+.restart-game{
+    margin-bottom: 30px;
+}
+
+.restart-btn{
+    position: relative;
+    width: 230px;
+    height: 54px;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    border: 4px solid rgb(244 208 181);
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px 3px rgb(244 208 181);
+    transition: all 0.5s;               
+}
+.restart-btn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+  top: 0;
+  /* height: 100%;
+  width:100%; */
+}
+.restart-btn:active{
+    box-shadow:0 0 0 0;
+    top:5px;
+    left:5px;
+}
+
+
+.restart-btn p{
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.restart-btn p span{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+.winner-text{
+    visibility: hidden;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 35px;
+    margin-top: 0px;
+}
+
+.restart-game{
+    visibility: hidden;
+}
+
+.restart-btn:hover{
+    cursor: pointer;
+}
