@@ -126,13 +126,13 @@ function playerPlay(e) {
   const playerImageDiv = document.querySelector(".player-window");
   if (playerChoice == 0) {
     playerImageDiv.innerHTML =
-      '<img src="../img/Rock.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
+      '<img src="img/Rock.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
   } else if (playerChoice == 1) {
     playerImageDiv.innerHTML =
-      '<img src="../img/Paper.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
+      '<img src="img/Paper.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
   } else if (playerChoice == 2) {
     playerImageDiv.innerHTML =
-      '<img src="../img/Scissor.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
+      '<img src="img/Scissor.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
   }
   return playerChoice;
 }
@@ -143,13 +143,13 @@ function computerPlay() {
   const botImageDiv = document.querySelector(".bot-window");
   if (random_option == 0) {
     botImageDiv.innerHTML =
-      '<img src="../img/Rock.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
+      '<img src="img/Rock.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
   } else if (random_option == 1) {
     botImageDiv.innerHTML =
-      '<img src="../img/Paper.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
+      '<img src="img/Paper.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
   } else if (random_option == 2) {
     botImageDiv.innerHTML =
-      '<img src="../img/Scissor.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
+      '<img src="img/Scissor.jpg" style="width:150px;max-width:150px; height:150px; max-height: 150px; border-radius:50px;" alt="">';
   }
   return random_option;
 }
